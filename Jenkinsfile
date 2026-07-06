@@ -16,8 +16,8 @@ pipeline {
         stage('Build Backend') {
             steps {
                 dir('backend/ImageUploader.Api') {
-                    sh 'dotnet restore'
-                    sh 'dotnet publish -c Release -o publish'
+                    bat 'dotnet restore'
+                    bat 'dotnet publish -c Release -o publish'
                 }
             }
         }
@@ -25,8 +25,8 @@ pipeline {
         stage('Build Frontend') {
             steps {
                 dir('frontend') {
-                    sh 'npm install'
-                    sh 'npm run build'
+                    bat 'npm install'
+                    bat 'npm run build'
                 }
             }
         }
