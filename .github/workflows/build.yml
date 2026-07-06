@@ -52,5 +52,5 @@ jobs:
       - name: Upload Frontend Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: frontend-build
-          path: frontend/build
+          name: frontend-dist
+          path: frontend/dist
