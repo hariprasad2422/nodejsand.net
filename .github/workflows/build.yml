@@ -19,7 +19,7 @@ jobs:
       - name: Setup .NET SDK
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '10.0.9'
+          dotnet-version: '10.0.x'
 
       - name: Restore .NET Packages
         run: dotnet restore backend/ImageUploader.Api/ImageUploader.Api.csproj
